@@ -1,11 +1,13 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import Showcase from '../components/showcase'
 
 // markup
 const IndexPage = () => {
   return (
     <Layout>
       {/* showcase */}
+      <Showcase />
       {/* about */}
       {/* beer */}
       {/* contact */}
