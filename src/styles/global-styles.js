@@ -1,6 +1,7 @@
 import { css } from '@emotion/react'
 import '@fontsource/montserrat'
 import '@fontsource/montserrat/900.css'
+import '@fontsource/montserrat/200.css'
 
 /*
 Supported variables:
@@ -24,14 +25,17 @@ const globalStyles = css`
 
   * {
     box-sizing: border-box;
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
   }
 
   body {
-    font-family: 'Montserrat';
     font-size: 16px;
     line-height: 1.5;
     background: var(--color-dark);
     color: var(--color-light);
+    letter-spacing: 2px;
   }
 
   img {
@@ -44,6 +48,7 @@ const globalStyles = css`
 
   a {
     color: var(--color-primary);
+    text-decoration: none;
   }
 
   h1,
@@ -54,6 +59,7 @@ const globalStyles = css`
   h6 {
     font-weight: 900;
     line-height: 0.5;
+    margin-bottom: 1.5rem;
   }
 
   ${'' /* utility classes */}
@@ -61,32 +67,29 @@ const globalStyles = css`
     margin: 4rem 0;
   }
 
-  .btn-large {
-    display: block;
-    padding: 1rem 4rem;
+  .btn {
+    margin-top: 2rem;
+    padding: 0.5rem 4rem;
     border: transparent;
     cursor: pointer;
     border-radius: var(--border-radius);
     outline: transparent;
-    font-size: 1rem;
-    margin-top: 1rem;
+    font-size: 0.75rem;
     text-align: center;
+    width: 100%;
+  }
+
+  .btn-large {
+    display: block;
   }
 
   .btn-small {
     display: inline-block;
-    padding: 1rem 4rem;
-    border: transparent;
-    cursor: pointer;
-    border-radius: var(--border-radius);
-    outline: transparent;
-    font-size: 1rem;
-    text-align: center;
   }
 
   .btn-primary {
     background: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-light);
 
     &:hover {
       background: var(--color-light);
