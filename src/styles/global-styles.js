@@ -21,6 +21,9 @@ const globalStyles = css`
     --border-radius: 3px;
     --transition: all 0.3s ease;
     --max-width: 1200px;
+    --rotate: rotate(180deg);
+    --scale: scale(1.25);
+    --letter-spacing: 4px;
   }
 
   * {
@@ -47,7 +50,7 @@ const globalStyles = css`
   }
 
   a {
-    color: var(--color-primary);
+    color: var(--color-light);
     text-decoration: none;
   }
 
@@ -111,6 +114,28 @@ const globalStyles = css`
     opacity: 0;
     transition: var(--transition);
     transform: translateX(-100%);
+  }
+
+  .show-sidebar {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  ${'' /* media queries */}
+  @media screen and (max-width: 500px) {
+    body {
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+
+    .btn {
+      font-size: 1rem;
+    }
   }
 `
 
