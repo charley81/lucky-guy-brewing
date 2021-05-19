@@ -62,12 +62,14 @@ const globalStyles = css`
   h6 {
     font-weight: 500;
     line-height: 0.5;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   ${'' /* utility classes */}
   .section {
-    margin: 4rem 0;
+    max-width: var(--max-width);
+    margin: 12rem auto;
+    padding: 0 1rem;
   }
 
   .btn {
