@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { css } from '@emotion/react'
+import Navigation from './navigation'
 
 const Showcase = () => {
   return (
@@ -30,7 +31,7 @@ const Showcase = () => {
         .text-wrap {
           max-width: 600px;
           margin-top: -10vh;
-          background: rgba(0, 0, 0, 0.6);
+          background: rgba(0, 0, 0, 0.7);
           padding: 2rem 1rem;
           border-radius: var(--border-radius);
         }
@@ -40,6 +41,7 @@ const Showcase = () => {
         }
       `}
     >
+      <Navigation />
       <StaticImage
         src="../images/showcase.jpg"
         alt="inside of beer brewery showing brew tanks"
