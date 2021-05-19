@@ -2,6 +2,7 @@ import React from 'react'
 import links from '../utils/nav-links'
 import { css } from '@emotion/react'
 import { HiMenuAlt3 } from 'react-icons/hi'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 const Nav = ({ toggleSidebar }) => {
   return (
@@ -101,11 +102,9 @@ const Nav = ({ toggleSidebar }) => {
         <ul className="section-links">
           {links.map(link => {
             return (
-              <li key={link.id}>
-                <a href={link.sectionLink} className={link.className}>
-                  {link.text}
-                </a>
-              </li>
+              <AnchorLink key={link.id} to={`/${link.sectionLink}`}>
+                {link.text}
+              </AnchorLink>
             )
           })}
         </ul>
