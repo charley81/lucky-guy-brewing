@@ -21,6 +21,7 @@ const links = [
     id: 4,
     text: <FaShoppingCart />,
     sectionLink: '#about',
+    className: 'cart-icon',
   },
 ]
 

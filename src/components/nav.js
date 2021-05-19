@@ -27,7 +27,7 @@ const Nav = ({ toggleSidebar }) => {
           justify-content: space-between;
           align-items: center;
 
-          h3 {
+          h2 {
             margin: 0;
           }
         }
@@ -44,7 +44,7 @@ const Nav = ({ toggleSidebar }) => {
           transition: var(--transition);
 
           &:hover {
-            transform: scale(1.25) rotate(180deg);
+            transform: var(--scale) var(--rotate);
             color: var(--color-primary);
           }
         }
@@ -53,7 +53,11 @@ const Nav = ({ toggleSidebar }) => {
           display: none;
         }
 
-        @media screen and (min-width: 768px) {
+        .cart-icon {
+          font-size: 2rem;
+        }
+
+        @media screen and (min-width: 992px) {
           .toggle-btn {
             display: none;
           }
@@ -67,6 +71,12 @@ const Nav = ({ toggleSidebar }) => {
           .section-links a {
             text-transform: capitalize;
             margin-right: 2rem;
+            transition: var(--transition);
+            cursor: pointer;
+
+            &:hover {
+              color: var(--color-primary);
+            }
           }
 
           .nav-center {
@@ -79,7 +89,7 @@ const Nav = ({ toggleSidebar }) => {
     >
       <div className="nav-center">
         <div className="nav-header">
-          <h3>Lucky Guy Brewing</h3>
+          <h2>Lucky Guy Brewing</h2>
           <button>
             <HiMenuAlt3
               type="button"
@@ -92,7 +102,9 @@ const Nav = ({ toggleSidebar }) => {
           {links.map(link => {
             return (
               <li key={link.id}>
-                <a href={link.navLink}>{link.text}</a>
+                <a href={link.navLink} className={link.className}>
+                  {link.text}
+                </a>
               </li>
             )
           })}

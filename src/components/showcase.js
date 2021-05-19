@@ -28,7 +28,7 @@ const Showcase = () => {
         }
 
         .text-wrap {
-          max-width: 600px;
+          max-width: 800px;
           margin-top: -10vh;
           background: rgba(0, 0, 0, 0.7);
           padding: 2rem 1rem;
@@ -37,6 +37,24 @@ const Showcase = () => {
 
         .tagline {
           font-weight: 200;
+        }
+
+        @media screen and (min-width: 500px) {
+          h1 {
+            font-size: 2.5rem;
+          }
+        }
+
+        @media screen and (min-width: 768px) {
+          h1 {
+            font-size: 3rem;
+          }
+        }
+
+        @media screen and (min-width: 1100px) {
+          h1 {
+            font-size: 4rem;
+          }
         }
       `}
     >

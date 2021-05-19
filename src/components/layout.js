@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
   const [openNav, setOpenNav] = useState(false)
 
   const toggleSidebar = () => {
-    console.log('You clicked the toggle button')
     setOpenNav(!openNav)
   }
 
