@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import Showcase from '../components/showcase'
-import Navigation from '../components/navigation'
 
 // markup
 const IndexPage = () => {

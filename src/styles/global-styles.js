@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 import '@fontsource/montserrat'
-import '@fontsource/montserrat/900.css'
+import '@fontsource/montserrat/500.css'
 import '@fontsource/montserrat/200.css'
 
 /*
@@ -57,7 +57,7 @@ const globalStyles = css`
   h4,
   h5,
   h6 {
-    font-weight: 900;
+    font-weight: 500;
     line-height: 0.5;
     margin-bottom: 1.5rem;
   }
@@ -95,6 +95,22 @@ const globalStyles = css`
       background: var(--color-light);
       color: var(--color-dark);
     }
+  }
+
+  ${'' /* sidebar */}
+  .sidebar {
+    background: var(--color-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: var(--transition);
+    transform: translateX(-100%);
   }
 `
 
