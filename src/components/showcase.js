@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { css } from '@emotion/react'
-import Navigation from './navigation'
 
 const Showcase = () => {
   return (
@@ -41,7 +40,6 @@ const Showcase = () => {
         }
       `}
     >
-      <Navigation />
       <StaticImage
         src="../images/showcase.jpg"
         alt="inside of beer brewery showing brew tanks"
