@@ -102,7 +102,7 @@ const Nav = ({ toggleSidebar }) => {
           {links.map(link => {
             return (
               <li key={link.id}>
-                <a href={link.navLink} className={link.className}>
+                <a href={link.sectionLink} className={link.className}>
                   {link.text}
                 </a>
               </li>
