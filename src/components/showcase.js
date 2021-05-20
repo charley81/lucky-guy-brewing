@@ -76,9 +76,9 @@ const Showcase = () => {
             to ever touch your lips
           </p>
 
-          <a href="#beer" className="btn btn-large btn-primary">
-            Order Beer
-          </a>
+          <button className="btn btn-large btn-primary">
+            <a href="#beer">Order Beer</a>
+          </button>
         </div>
       </div>
     </header>
