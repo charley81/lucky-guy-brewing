@@ -1,10 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import {
-  AiFillDribbbleCircle,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-} from 'react-icons/ai'
+import { AiFillDribbbleCircle, AiFillTwitterCircle } from 'react-icons/ai'
 import { TiSocialLinkedinCircular } from 'react-icons/ti'
 import { css } from '@emotion/react'
 

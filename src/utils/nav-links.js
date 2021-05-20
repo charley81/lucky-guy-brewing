@@ -20,7 +20,7 @@ const links = [
   {
     id: 4,
     text: <FaShoppingCart />,
-    sectionLink: '#',
+    sectionLink: '#cart',
     className: 'cart-icon',
   },
 ]

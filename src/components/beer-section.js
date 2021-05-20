@@ -65,13 +65,10 @@ const BeerSection = () => {
           margin-top: 0;
         }
 
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: 1100px) {
           .percent-info {
             display: flex;
-
-            p {
-              margin-left: 1rem;
-            }
+            justify-content: space-between;
           }
         }
       `}
@@ -103,7 +100,7 @@ const BeerSection = () => {
                 </div>
 
                 <button className="btn btn-small btn-primary purchase-btn">
-                  <a href="#">Purchase</a>
+                  <a href="#cart">Purchase</a>
                 </button>
               </div>
             </div>
