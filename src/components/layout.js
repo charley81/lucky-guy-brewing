@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import globalStyles from '../styles/global-styles'
-import { Global } from '@emotion/react'
+import { Global, css } from '@emotion/react'
 import Nav from './nav'
 import Sidebar from './sidebar'
 import Footer from './footer'
@@ -17,7 +17,19 @@ const Layout = ({ children }) => {
       <Global styles={globalStyles} />
       <Nav toggleSidebar={toggleSidebar} />
       <Sidebar openNav={openNav} toggleSidebar={toggleSidebar} />
-      <main>{children}</main>
+      <div
+        css={css`
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;
+
+          main {
+            flex-grow: 1;
+          }
+        `}
+      >
+        <main>{children}</main>
+      </div>
       <Footer />
     </>
   )
