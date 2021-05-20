@@ -62,7 +62,6 @@ const globalStyles = css`
   h6 {
     font-weight: 500;
     line-height: 0.5;
-    margin-bottom: 3rem;
   }
 
   ${'' /* utility classes */}
@@ -70,6 +69,10 @@ const globalStyles = css`
     max-width: var(--max-width);
     margin: 12rem auto;
     padding: 0 1rem;
+
+    h3 {
+      margin-bottom: 3rem;
+    }
   }
 
   .btn {
@@ -98,7 +101,10 @@ const globalStyles = css`
 
     &:hover {
       background: var(--color-light);
-      color: var(--color-dark);
+
+      a {
+        color: var(--color-dark);
+      }
     }
   }
 
