@@ -9,6 +9,10 @@ const Showcase = () => {
       css={css`
         position: relative;
 
+        h1 {
+          margin-bottom: 2rem;
+        }
+
         .showcase-img {
           height: 100vh;
         }
