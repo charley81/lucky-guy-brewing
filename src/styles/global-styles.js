@@ -75,6 +75,11 @@ const globalStyles = css`
     }
   }
 
+  .underline {
+    height: 0.25rem;
+    background: var(--color-light);
+  }
+
   .btn {
     margin-top: 2rem;
     padding: 0.5rem 4rem;

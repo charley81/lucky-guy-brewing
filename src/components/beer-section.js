@@ -42,11 +42,6 @@ const BeerSection = () => {
           flex-direction: column;
         }
 
-        .underline {
-          height: 0.25rem;
-          background: var(--color-light);
-        }
-
         .card-header {
           display: flex;
           justify-content: space-between;
