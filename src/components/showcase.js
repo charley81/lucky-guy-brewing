@@ -1,12 +1,17 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { css } from '@emotion/react'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 const Showcase = () => {
   return (
     <header
       css={css`
         position: relative;
+
+        h1 {
+          margin-bottom: 2rem;
+        }
 
         .showcase-img {
           height: 100vh;
@@ -76,9 +81,9 @@ const Showcase = () => {
             to ever touch your lips
           </p>
 
-          <button className="btn btn-large btn-primary">
-            <a href="#beer">Order Beer</a>
-          </button>
+          <AnchorLink to="/#beer">
+            <button className="btn btn-large btn-primary">Order Beer</button>
+          </AnchorLink>
         </div>
       </div>
     </header>

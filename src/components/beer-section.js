@@ -30,7 +30,7 @@ const BeerSection = () => {
       css={css`
         .cards-wrap {
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
           gap: 1rem;
         }
 
@@ -40,11 +40,6 @@ const BeerSection = () => {
           border-radius: var(--border-radius);
           display: flex;
           flex-direction: column;
-        }
-
-        .underline {
-          height: 0.25rem;
-          background: var(--color-light);
         }
 
         .card-header {

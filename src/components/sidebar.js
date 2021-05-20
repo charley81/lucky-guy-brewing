@@ -68,7 +68,9 @@ const Sidebar = ({ openNav, toggleSidebar }) => {
         {links.map(link => {
           return (
             <li key={link.id}>
-              <a href={link.sectionLink}>{link.text}</a>
+              <a href={link.sectionLink} onClick={toggleSidebar}>
+                {link.text}
+              </a>
             </li>
           )
         })}

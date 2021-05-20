@@ -7,6 +7,12 @@ module.exports = {
     title: 'Lucky Guy Brewing',
   },
   plugins: [
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-contentful',
       options: {
@@ -14,13 +20,13 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
       },
     },
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-image',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-anchor-links',
+
+    {
+      resolve: 'gatsby-plugin-anchor-links',
+      options: {
+        offset: -100,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
