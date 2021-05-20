@@ -101,6 +101,7 @@ const globalStyles = css`
 
     &:hover {
       background: var(--color-light);
+      color: var(--color-dark);
 
       a {
         color: var(--color-dark);
