@@ -1,8 +1,23 @@
 import React from 'react'
 import Title from './title'
 import { css } from '@emotion/react'
+import { useForm, ValidationError } from '@formspree/react'
 
 const ContactSection = () => {
+  const [state, handleSubmit] = useForm('mjvjydeb')
+
+  if (state.succeeded) {
+    return (
+      <h4
+        css={css`
+          text-align: center;
+        `}
+      >
+        Thanks for joining!
+      </h4>
+    )
+  }
+
   return (
     <section
       className="section"
@@ -30,7 +45,7 @@ const ContactSection = () => {
     >
       <Title titleName="Contact Us" />
       <div className="contact-form">
-        <form>
+        <form onSubmit={handleSubmit}>
           <label htmlFor="name">
             Name
             <input type="text" name="name" id="name" required />
