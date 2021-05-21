@@ -11,7 +11,7 @@ const AboutSection = () => {
       css={css`
         .about-content {
           display: grid;
-          align-items: center;s
+          align-items: center;
         }
 
         p {
@@ -22,13 +22,20 @@ const AboutSection = () => {
         @media screen and (min-width: 768px) {
           .about-content {
             grid-template-columns: repeat(2, 1fr);
-
             gap: 4rem 2rem;
           }
 
           .about-image {
             height: 100%;
             border-radius: var(--border-radius);
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+
+          p:first-child {
+            margin-bottom: 1rem;
           }
         }
       `}

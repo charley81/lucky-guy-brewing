@@ -5,7 +5,9 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'Lucky Guy Brewing',
-    siteUrl: `https://www.example.com`,
+    description:
+      'Lucky Guy Brewing is a beer brewery and online store in Springfield, Massachusetts',
+    siteUrl: `https://luckyguybrewing.netlify.app/`,
   },
   plugins: [
     'gatsby-plugin-emotion',

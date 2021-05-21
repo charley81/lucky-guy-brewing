@@ -103,7 +103,7 @@ const BeerSection = () => {
                   className="btn btn-small btn-primary purchase-btn snipcart-add-item"
                   data-item-id={beer.id}
                   data-item-price={beer.price}
-                  data-item-url="/paintings/starry-night"
+                  data-item-url="https://luckyguybrewing.netlify.app/"
                   data-item-description={beer.desc}
                   data-item-name={beer.title}
                 >

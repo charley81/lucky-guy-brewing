@@ -2,10 +2,12 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import { css } from '@emotion/react'
+import Seo from '../components/seo'
 
 const NotFoundPage = () => {
   return (
     <Layout>
+      <Seo title="Error Page" description="This page was not found" />
       <section
         className="section"
         css={css`
