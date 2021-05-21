@@ -29,7 +29,7 @@ const InfoSection = () => {
 
         .icon {
           font-size: 2rem;
-          margin: 0 1rem;
+          margin-left: 0.25rem;
           padding: 0.25rem;
           background: var(--color-primary);
           border-radius: 50%;
@@ -53,6 +53,12 @@ const InfoSection = () => {
 
         .info-image {
           border-radius: var(--border-radius);
+        }
+
+        @media screen and (min-width: 500px) {
+          .icon {
+            margin: 0 0.5rem;
+          }
         }
 
         @media screen and (min-width: 768px) {
@@ -85,7 +91,7 @@ const InfoSection = () => {
       </div>
       <div className="info-content">
         <div className="header">
-          <h3 className="title">contact us</h3>
+          <h3 className="title">contact</h3>
           <div className="icon-container">
             <AiFillTwitterCircle className="icon" />
             <TiSocialLinkedinCircular className="icon" />
@@ -98,7 +104,7 @@ const InfoSection = () => {
             <li>345 Smith Street</li>
             <li>Springfield, Ma 01199 </li>
             <li>413.58.0912</li>
-            <li>info@theluckyguybrewing.com</li>
+            <li>info@lgb.com</li>
           </ul>
           <ul className="hours">
             <li>Thursday: 3pm–10pm</li>
