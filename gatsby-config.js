@@ -5,6 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'Lucky Guy Brewing',
+    siteUrl: `https://www.example.com`,
   },
   plugins: [
     'gatsby-plugin-emotion',
