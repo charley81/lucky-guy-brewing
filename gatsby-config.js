@@ -35,5 +35,31 @@ module.exports = {
       },
       __key: 'images',
     },
+    {
+      resolve: `gatsby-plugin-snipcart-advanced`,
+      options: {
+        version: '3.0.29',
+        publicApiKey: process.env.GATSBY_SNIPCART_API_KEY,
+        defaultLang: 'en',
+        currency: 'dol',
+        openCartOnAdd: true,
+        useSideCart: true,
+        // be careful with this mode cart. The cart in this mode has a bug of scroll in firefox
+        locales: {
+          en: {
+            actions: {
+              checkout: 'Please Confirm Your Order',
+            },
+          },
+        },
+        templatesUrl:
+          "path on your template file. Set file in the static folder, ex: '/snipcart/index.html'",
+        // not work on dev. Gatsby not serve html file in dev https://github.com/gatsbyjs/gatsby/issues/13072
+        innerHTML: `
+            <billing section="bottom">
+                <!-- Customization goes here -->
+            </billing>`,
+      },
+    },
   ],
 }

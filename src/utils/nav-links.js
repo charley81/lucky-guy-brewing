@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaShoppingCart } from 'react-icons/fa'
 
 const links = [
   {
@@ -16,12 +15,6 @@ const links = [
     id: 3,
     text: 'contact',
     sectionLink: '#contact',
-  },
-  {
-    id: 4,
-    text: <FaShoppingCart />,
-    sectionLink: '#cart',
-    className: 'cart-icon',
   },
 ]
 

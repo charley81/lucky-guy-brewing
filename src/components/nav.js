@@ -3,6 +3,7 @@ import links from '../utils/nav-links'
 import { css } from '@emotion/react'
 import { HiMenuAlt3 } from 'react-icons/hi'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import { FaShoppingCart } from 'react-icons/fa'
 
 const Nav = ({ toggleSidebar }) => {
   return (
@@ -55,7 +56,11 @@ const Nav = ({ toggleSidebar }) => {
         }
 
         .cart-icon {
-          font-size: 2rem;
+          font-size: 1.5rem;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
 
         @media screen and (min-width: 992px) {
@@ -107,6 +112,9 @@ const Nav = ({ toggleSidebar }) => {
               </AnchorLink>
             )
           })}
+          <li>
+            <FaShoppingCart className="snipcart-checkout cart-icon" />
+          </li>
         </ul>
       </div>
     </nav>

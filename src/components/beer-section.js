@@ -99,7 +99,14 @@ const BeerSection = () => {
                   <p>Price: ${beer.price}</p>
                 </div>
 
-                <button className="btn btn-small btn-primary purchase-btn">
+                <button
+                  className="btn btn-small btn-primary purchase-btn snipcart-add-item"
+                  data-item-id={beer.id}
+                  data-item-price={beer.price}
+                  data-item-url="/paintings/starry-night"
+                  data-item-description={beer.desc}
+                  data-item-name={beer.title}
+                >
                   <a href="#cart">Purchase</a>
                 </button>
               </div>
