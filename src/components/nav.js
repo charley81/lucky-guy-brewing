@@ -16,7 +16,7 @@ const Nav = ({ toggleSidebar }) => {
         height: 5rem;
         display: flex;
         align-items: center;
-        z-index: 200;
+        z-index: 1;
 
         .nav-center {
           width: 90vw;
