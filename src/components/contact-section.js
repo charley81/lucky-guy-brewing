@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from './title'
 import { css } from '@emotion/react'
-import { useForm, ValidationError } from '@formspree/react'
+import { useForm } from '@formspree/react'
 
 const ContactSection = () => {
   const [state, handleSubmit] = useForm('mjvjydeb')
