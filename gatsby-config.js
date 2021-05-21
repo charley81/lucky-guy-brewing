@@ -38,17 +38,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-snipcart-advanced`,
       options: {
-        version: '3.0.29',
+        version: '3.2.0',
         publicApiKey: process.env.GATSBY_SNIPCART_API_KEY,
-        defaultLang: 'en',
-        currency: 'dol',
         openCartOnAdd: true,
         useSideCart: true,
         // be careful with this mode cart. The cart in this mode has a bug of scroll in firefox
         locales: {
           en: {
             actions: {
-              checkout: 'Please Confirm Your Order',
+              checkout: 'Review Cart',
             },
           },
         },

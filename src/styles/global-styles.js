@@ -24,6 +24,29 @@ const globalStyles = css`
     --rotate: rotate(180deg);
     --scale: scale(1.25);
     --letter-spacing: 4px;
+    ${'' /* snipcart variables */}
+    --bgColor-default: #2a2a28;
+    --color-default: #dfdac5;
+    --color-alt: #dfdac6;
+    --borderColor-default: #dfdac6;
+    --color-icon: #dfdac6;
+    --color-link: #978459;
+    --color-link-hover: #dfdac6;
+    --color-inputLabel: #dfdac6;
+    --bgColor-alt: #2a2a28;
+    --bgColor-modal: #2a2a28;
+    --bgColor-input: #dfdac6;
+    --bgColor-input-hover: #dfdac6;
+    --bgColor-input-focus: #dfdac6;
+    --bgColor-buttonPrimary: #978459;
+    --bgColor-buttonPrimary-hover: #dfdac5;
+    --color-buttonPrimary-hover: #2a2a28;
+    --bgColor-buttonSecondary: #978459;
+    --bgColor-buttonSecondary-hover: #dfdac6;
+    --color-buttonSecondary-hover: #2a2a28;
+    --color-buttonSecondary: #dfdac6;
+    --color-inputIcon: #dfdac6;
+    --color-inputLabel: #dfdac6;
   }
 
   * {
