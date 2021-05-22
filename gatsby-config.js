@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: `https://luckyguybrewing.netlify.app/`,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     'gatsby-plugin-emotion',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
