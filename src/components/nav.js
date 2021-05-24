@@ -90,10 +90,10 @@ const Nav = ({ toggleSidebar }) => {
           <h2>Lucky Guy Brewing</h2>
           <button>
             <HiMenuAlt3
+              aria-label="toggle"
               type="button"
               className="toggle-btn"
               onClick={toggleSidebar}
-              aria-label="toggle"
             />
           </button>
         </div>

@@ -100,7 +100,7 @@ const BeerSection = () => {
                 </div>
 
                 <button
-                  aria-label="toggle button"
+                  aria-label="purchase beer"
                   className="btn btn-small btn-primary purchase-btn snipcart-add-item"
                   data-item-id={beer.id}
                   data-item-price={beer.price}
