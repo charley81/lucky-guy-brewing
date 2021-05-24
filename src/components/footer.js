@@ -13,10 +13,6 @@ const Footer = () => {
           margin: 1rem 0;
         }
 
-        span {
-          color: var(--color-primary);
-        }
-
         @media screen and (min-width: 992px) {
           display: flex;
           justify-content: space-between;

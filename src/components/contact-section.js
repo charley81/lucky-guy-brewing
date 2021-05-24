@@ -64,10 +64,7 @@ const ContactSection = () => {
               required
             ></textarea>
           </label>
-          <button
-            type="submit"
-            className="btn btn-large btn-primary submit-btn"
-          >
+          <button type="submit" className="btn btn-large btn-light submit-btn">
             Submit
           </button>
         </form>
