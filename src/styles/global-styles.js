@@ -161,6 +161,20 @@ const globalStyles = css`
     }
   }
 
+  .btn-dark {
+    background: var(--color-dark);
+    color: var(--color-light);
+
+    &:hover {
+      background: var(--color-light);
+      color: var(--color-dark);
+
+      a {
+        color: var(--color-dark);
+      }
+    }
+  }
+
   ${'' /* sidebar */}
   .sidebar {
     background: var(--color-dark);
