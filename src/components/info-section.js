@@ -93,13 +93,28 @@ const InfoSection = () => {
         <div className="header">
           <h3 className="title">contact</h3>
           <div className="icon-container">
-            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Link to Twitter"
+            >
               <AiFillTwitterCircle className="icon" />
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Link to Linkedin"
+            >
               <TiSocialLinkedinCircular className="icon" />
             </a>
-            <a href="https://www.dribbble.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.dribbble.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Link to Dribble"
+            >
               <AiFillDribbbleCircle className="icon" />
             </a>
           </div>
