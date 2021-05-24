@@ -27,7 +27,7 @@ const Showcase = () => {
           justify-content: center;
           flex-direction: column;
           align-items: center;
-          background: rgba(0, 0, 0, 0.6);
+          background: rgba(0, 0, 0, 0.7);
           padding: 1rem;
           text-align: center;
         }

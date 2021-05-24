@@ -101,7 +101,7 @@ const BeerSection = () => {
 
                 <button
                   aria-label="purchase beer"
-                  className="btn btn-small btn-primary purchase-btn snipcart-add-item"
+                  className="btn btn-small btn-dark purchase-btn snipcart-add-item"
                   data-item-id={beer.id}
                   data-item-price={beer.price}
                   data-item-url="https://luckyguybrewing.netlify.app/"
