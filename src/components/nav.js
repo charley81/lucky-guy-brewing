@@ -28,10 +28,11 @@ const Nav = ({ toggleSidebar }) => {
           display: flex;
           justify-content: space-between;
           align-items: center;
+        }
 
-          h2 {
-            margin: 0;
-          }
+        h4 {
+          margin: 0;
+          font-size: 1rem;
         }
 
         button {
@@ -53,6 +54,12 @@ const Nav = ({ toggleSidebar }) => {
 
         .section-links {
           display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+          h4 {
+            font-size: 2rem;
+          }
         }
 
         @media screen and (min-width: 992px) {
@@ -87,7 +94,7 @@ const Nav = ({ toggleSidebar }) => {
     >
       <div className="nav-center">
         <div className="nav-header">
-          <h2>Lucky Guy Brewing</h2>
+          <h4>Lucky Guy Brewing</h4>
           <button>
             <HiMenuAlt3
               aria-label="toggle"
