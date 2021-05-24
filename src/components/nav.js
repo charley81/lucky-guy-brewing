@@ -55,14 +55,6 @@ const Nav = ({ toggleSidebar }) => {
           display: none;
         }
 
-        .cart-icon {
-          font-size: 1.5rem;
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
-
         @media screen and (min-width: 992px) {
           .toggle-btn {
             display: none;
