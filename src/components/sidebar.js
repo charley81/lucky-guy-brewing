@@ -56,7 +56,7 @@ const Sidebar = ({ openNav, toggleSidebar }) => {
       `}
     >
       {/* close button */}
-      <button>
+      <button aria-label="close menu button">
         <AiOutlineClose
           type="button"
           className="close-btn"
