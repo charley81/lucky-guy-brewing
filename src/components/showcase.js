@@ -35,7 +35,7 @@ const Showcase = () => {
         .text-wrap {
           max-width: 800px;
           margin-top: -10vh;
-          background: rgba(0, 0, 0, 0.7);
+          background: rgba(0, 0, 0, 0.8);
           padding: 2rem 1rem;
           border-radius: var(--border-radius);
         }
