@@ -98,6 +98,14 @@ const globalStyles = css`
     }
   }
 
+  .cart-icon {
+    font-size: 1.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   .underline {
     height: 0.25rem;
     background: var(--color-light);

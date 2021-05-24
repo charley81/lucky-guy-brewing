@@ -93,9 +93,15 @@ const InfoSection = () => {
         <div className="header">
           <h3 className="title">contact</h3>
           <div className="icon-container">
-            <AiFillTwitterCircle className="icon" />
-            <TiSocialLinkedinCircular className="icon" />
-            <AiFillDribbbleCircle className="icon" />
+            <a href="https://www.twitter.com" target="_blank">
+              <AiFillTwitterCircle className="icon" />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+              <TiSocialLinkedinCircular className="icon" x />
+            </a>
+            <a href="https://www.dribbble.com" target="_blank">
+              <AiFillDribbbleCircle className="icon" />
+            </a>
           </div>
         </div>
         <div className="underline"></div>

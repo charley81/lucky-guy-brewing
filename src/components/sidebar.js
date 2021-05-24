@@ -2,6 +2,7 @@ import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
 import links from '../utils/nav-links'
 import { css } from '@emotion/react'
+import { FaShoppingCart } from 'react-icons/fa'
 
 const Sidebar = ({ openNav, toggleSidebar }) => {
   return (
@@ -74,6 +75,9 @@ const Sidebar = ({ openNav, toggleSidebar }) => {
             </li>
           )
         })}
+        <li>
+          <FaShoppingCart className="snipcart-checkout cart-icon" />
+        </li>
       </ul>
     </aside>
   )

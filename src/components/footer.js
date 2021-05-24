@@ -28,7 +28,7 @@ const Footer = () => {
       </p>
       <p>
         Designed & Developed By:
-        <a href="https://thegreatdevco.com/">
+        <a href="https://thegreatdevco.com/" target="_blank">
           <span>TGDC</span>
         </a>
       </p>
