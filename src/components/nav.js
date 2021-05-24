@@ -101,6 +101,7 @@ const Nav = ({ toggleSidebar }) => {
               type="button"
               className="toggle-btn"
               onClick={toggleSidebar}
+              aria-label="toggle button"
             />
           </button>
         </div>
