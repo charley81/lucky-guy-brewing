@@ -27,8 +27,8 @@ const Footer = () => {
         &copy; <span>Lucky Guy Brewing </span> {new Date().getFullYear()}
       </p>
       <p>
-        Designed & Developed By:{' '}
-        <a href="www.google.com">
+        Designed & Developed By:
+        <a href="https://thegreatdevco.com/">
           <span>TGDC</span>
         </a>
       </p>

@@ -34,7 +34,7 @@ const AboutSection = () => {
             margin-bottom: 0;
           }
 
-          p:first-child {
+          p:first-of-type {
             margin-bottom: 1rem;
           }
         }
