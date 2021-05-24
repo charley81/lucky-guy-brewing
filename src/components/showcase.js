@@ -83,7 +83,7 @@ const Showcase = () => {
 
           <AnchorLink to="/#beer">
             <button
-              className="btn btn-large btn-primary"
+              className="btn btn-large btn-light"
               aria-label="go to beer section"
             >
               Order Beer

@@ -121,6 +121,7 @@ const globalStyles = css`
     font-size: 0.75rem;
     text-align: center;
     width: 100%;
+    border: 1px solid transparent;
   }
 
   .btn-large {
@@ -141,6 +142,21 @@ const globalStyles = css`
 
       a {
         color: var(--color-dark);
+      }
+    }
+  }
+
+  .btn-light {
+    background: var(--color-light);
+    color: var(--color-dark);
+
+    &:hover {
+      background: transparent;
+      border: 1px solid var(--color-light);
+      color: var(--color-light);
+
+      a {
+        color: var(--color-light);
       }
     }
   }
